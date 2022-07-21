@@ -25,3 +25,38 @@ body{
   h1,h2,h3,h4,h5{
   font-family: 'Marcellus' , serif;
 }
+
+
+/*Barra de navegacion*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    padding: 1rem;
+}
+.item{
+    padding: 1rem;
+}
+.menu a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+.navbar-button{
+    background-color: var(--azuloscuro);
+    padding: 0.5rem 1rem;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+}
+.menu i{
+    margin-right: 0.5rem;
+}
+
+.logo img{
+   height: 3rem;
+}
