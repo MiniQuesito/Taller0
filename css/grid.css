@@ -226,6 +226,7 @@ nav a:hover {
     color: white;
     padding:  1rem;
     margin-top: 1.5rem;
+    height: 15rem;
 }
 .opinion-title{
     text-align: center;
@@ -240,9 +241,6 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
-.fa-solid .fa-star{
-    flex-wrap: nowrap;
-}
 
 .foto1{
     width: 5rem;
@@ -250,7 +248,7 @@ nav a:hover {
     background-image: url(../img/opinion/user1.png);
     background-size: cover;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 0.5rem;
 }
 .foto2{
     width: 5rem;
@@ -267,8 +265,29 @@ nav a:hover {
     background-size: cover;
     border-radius: 50%;
     margin: 0 auto;
+
 }
 
+.opiniones{
+
+  
+
+}
+.opinion-uno .arriba{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: flex-end;
+}
+.opinion-uno .arriba p{
+  flex-direction: column;
+}
+
+.opinion-uno{
+ 
+   margin: 2rem;
+
+}
 
 
 /*Resolución tabletas*/
