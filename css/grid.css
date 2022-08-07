@@ -227,6 +227,7 @@ nav a:hover {
     padding:  1rem;
     margin-top: 1.5rem;
     height: 15rem;
+    margin-bottom: 2rem;
 }
 .opinion-title{
     text-align: center;
@@ -268,20 +269,11 @@ nav a:hover {
 
 }
 
-.opiniones{
+.opinion-uno {
+    margin: 2rem;
+}
 
-  
 
-}
-.opinion-uno .arriba{
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  align-items: flex-end;
-}
-.opinion-uno .arriba p{
-  flex-direction: column;
-}
 
 .opinion-uno{
  
@@ -289,6 +281,23 @@ nav a:hover {
 
 }
 
+#footer{
+  background-color: var(--negro2);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: 'Marcellus', serif;
+  font-size: 1rem;
+}
+.botones {
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: var(--negro2); /*color botón*/
+    color: var(--blanco); /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font-family: 'Marcellus', serif;
+    }
 
 /*Resolución tabletas*/
 @media screen and (min-width:768px) {
