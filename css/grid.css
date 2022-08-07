@@ -137,6 +137,139 @@ nav a:hover {
     margin-top: 60px;
     min-height: 400px;
 }
+.texto1{
+    background-color: rgba(0,0,0,0.35);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    display: flex; 
+    flex-wrap: wrap-reverse;
+}
+
+#descripcion {
+   margin: 1.5rem;
+}
+
+#features{
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding:  1rem;
+    margin-top: 1.5rem;
+}
+.features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+.features-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.feature{
+    width: 25%;
+    min-width: 180px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue{
+    background-color: #00325eae;
+}
+.feature-black{
+    background-color: rgba(0,0,0,0.59);
+}
+
+#ubicacion{
+    margin: 1rem;
+    font-size: 2.2em;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+}
+#ubicacion p{
+    margin: 2rem;
+}
+.ubicanos-hr{
+  width: 90%;  
+  background-color: magenta;
+}
+#ubicacion iframe{
+    width:515px;
+    height:550px; 
+    border: 0;
+}
+#ubicacion div{
+    margin: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+#ubicacion div p{
+    margin-top: 1rem;
+}
+
+#opinion{
+    background: url(../img/opinion/vector-comentarios.png);
+    color: white;
+    padding:  1rem;
+    margin-top: 1.5rem;
+}
+.opinion-title{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.opinon-description{
+    display: flex;
+    flex-wrap: colum;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fa-solid .fa-star{
+    flex-wrap: nowrap;
+}
+
+.foto1{
+    width: 5rem;
+    height:5rem;
+    background-image: url(../img/opinion/user1.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.foto2{
+    width: 5rem;
+    height:5rem;
+    background-image: url(../img/opinion/user2.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.foto3{
+    width: 5rem;
+    height:5rem;
+    background-image: url(../img/opinion/user3.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
 
 /*Resolución tabletas*/
 @media screen and (min-width:768px) {

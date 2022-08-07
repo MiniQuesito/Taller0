@@ -30,6 +30,25 @@ h5 {
     font-family: 'Marcellus', serif;
 }
 
+body{
+     background-image: URL(../img/login/bg-login.png);
+     background-repeat: no-repeat;
+     background-size: 25rem;
+     background-position: center center;
+     background-attachment: fixed;
+}
+
 .login{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--azuloscuro);
+      margin: 20px 20px 20px 20px;
+      align-items: center;
+      border-radius: 2%;
       
+}
+
+form{
+    padding: 20px 20px;
+    margin: 20px 20px;
 }
