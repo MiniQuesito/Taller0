@@ -1,0 +1,273 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+:root{
+    
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-image: url(../img/fondoD.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Marcellus', serif;
+}
+
+/*mobile first*/
+
+/*Dashboard*/
+
+.dashboard{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.menu_side{
+    width: 60px;
+    height: 100%;
+    background-color: var(--azulnegro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.logos{
+    background-image: url(../img/Group\ 200.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    height: 20%;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo-1{
+    width: 40px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.logo-2{
+    width: 35px;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+
+.options_menu{
+    padding: 20px 20px;
+    position: absolute;
+    top: 10%px;
+    font-size: 18px;
+    height: 100%;
+    z-index: 300;
+    overflow: hidden;
+    border-right: 0 solid var(--azulnegro);
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.options_menu a{
+    color: #fff;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+    text-decoration: none;
+}
+
+.options_menu a:hover{
+    color: #0B3860;
+}
+
+.options_menu .opcion{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options_menu .opcion i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options_menu .opcion h6{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.options_menu #exit{
+    margin-top: 70%;
+}
+
+a.seleccion{
+    color: #fff;
+}
+
+.seleccion::before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: #fff;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+
+
+.menu_side_move{
+    width: 250px;
+}
+
+
+/*formulario*/
+
+.formulario{
+    background-color: rgba(225, 228, 225, 0.86);
+    margin: 20px;
+    border-radius: 7px; 
+}
+
+.form{
+    margin: 20px;
+    padding: 20px 0px;
+}
+
+label{
+    margin-top: 10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 23px;
+}
+
+img{
+    display: flex;
+    margin: auto;
+    width: 130px;
+}  
+
+.checks{
+    display: flex;
+    gap: 20px;
+}
+.form-check{
+    height: 70px;
+    padding: 2px;
+}
+
+.button {
+    margin-top: 20px;
+    width: 65%;
+    height: 30px;
+    background-color: var(--negro2);
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Resolución notebooks*/
+@media screen and (min-width:1024px){
+    .form{
+        font-size: 23px;
+        display: grid;
+        grid-template:
+            "titulo titulo titulo" 10%
+            "column-1 column-2 column-3" 65%
+            "column-1 footer footer"  25%/
+             20% 40% 40%; 
+    }
+
+    .titulo{
+        grid-area: titulo;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .column-1{
+        grid-area: column-1; 
+        padding: 20px;
+    }
+
+    .column-2{
+        grid-area: column-2; 
+        padding: 15px;
+    }
+
+    .column-3{
+        grid-area: column-3;  
+        padding: 15px; 
+    }
+
+    .footer{
+        grid-area: footer;
+        padding: 20px;
+        margin-top: -60px;
+    }
+
+    .contraseñas{
+        margin-top: -20px;
+        display: flex;
+        width: 100%;
+    }
+
+    .contraseña{
+        width: 50%;
+        margin: 0px 20px 0px 0px;
+    }
+
+    .confirmar{
+        width: 50%;
+    }
+
+    .button{
+        width: 30%;
+        height: 45px;
+    }
+
+    .body_move{
+        margin-left: 250px;
+    }
+    
+}
